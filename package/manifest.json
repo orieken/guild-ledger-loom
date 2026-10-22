@@ -1,0 +1,28 @@
+{
+  "schema_version": "guild-ledger.loom-profile/v1",
+  "harness_id": "H3",
+  "profile": "native-mock",
+  "status": "mock integration only; not admitted",
+  "source": {
+    "repository": "https://github.com/orieken/loom.git",
+    "commit": "3f2817818c68f42520229aab9342ce91533cef2f",
+    "tree": "7095c1ceb8c167b30acd4821b0890162290309c4",
+    "archive_format": "git archive --format=tar.gz",
+    "archive_sha256": "99a12e8c129457b3c291d6efbc07e5998a18be098f416e1a595ccc189a555d63"
+  },
+  "compiler": "go1.26.5",
+  "provider": "mock",
+  "plan": "deliver-feature",
+  "assets": {
+    "mock-spec.md": "c8ca499c3c173e535d037262c7baf38eb373a7c8c5d81e7951b519cb857f56a8"
+  },
+  "gates": [
+    "confirm-design",
+    "confirm-security",
+    "confirm-ship"
+  ],
+  "gate_policy": "halt by default; explicit synthetic fixture approvals only in tests",
+  "real_provider_enabled": false,
+  "skills_installed_globally": false,
+  "model_calls": 0
+}
